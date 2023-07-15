@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(18, 70, 70);
+    background-color: rgba(235, 193, 79, 0.733);
+    
+  }
+  
+  header {
+    background-image: linear-gradient(to bottom, rgba(139, 69, 19, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url('../img/aje222.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px; /* Establece la altura deseada en píxeles */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  
+  
+  nav ul li a {
+    color: #6d0606;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+  color: #000000 !important; /* Agrega !important para asegurar que se aplique este color */
+  }
+  
+  
+  footer {
+    background-color: #420b0b;
+    padding: 20px;
+    text-align: center;
+    height: 200px; 
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    color: #be9191;; /* Cambia el color del texto del elemento <p> dentro del footer */
+  }
+  
+  
+  header {
+    position: relative;
+  }
+
+  
+  
+  
+
+
+
+  /* efecto agrandar boton */
+  .btn {
+  padding: 10px 20px;
+  background-color: #f7f4f4;
+  color: #501010;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  }
+  
+  .btn:hover {
+  background-color: #ffffff; /* Color de fondo al pasar el cursor */
+  color: #801f1fb0; /* Color del texto al pasar el cursor */
+  }
+  
+  .btn:active {
+  background-color: #ffffff; /* Color de fondo al hacer clic */
+  color: #000000; /* Color del texto al hacer clic */
+  }
+  
+  
+  .social-links a {
+    display: inline-block;
+  }
+
+
+  
+
+  .school-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    gap: 10px;
+  }
+  
+  .school-list li {
+    font-size: 22px;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    background-color: #ffffffe5;
+    border-radius: 0px;
+    border: 1px solid black; /* Agrega el borde negro */
+  }
+  
+  .school-list li:hover {
+    color: #4d1704b6;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  
+  
+h1 {
+    color: #000000;
+    font-size:30px;
+    padding: 30px;
+    font-family: "Roboto Slab", serif;
+  }
+ 
+  

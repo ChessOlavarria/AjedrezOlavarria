@@ -1,0 +1,264 @@
+body {
+  font-family: Arial, sans-serif;
+  color: rgb(18, 70, 70);
+  background-color: rgba(235, 193, 79, 0.733);
+  
+}
+
+header {
+  background-image: linear-gradient(to bottom, rgba(139, 69, 19, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url('../img/aje222.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px; /* Establece la altura deseada en píxeles */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+
+
+nav ul li a {
+  color: #6d0606;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+color: #000000 !important; /* Agrega !important para asegurar que se aplique este color */
+}
+
+
+footer {
+  background-color: #420b0b;
+  padding: 20px;
+  text-align: center;
+  height: 200px; 
+}
+p {
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #be9191; /* Cambia el color del texto del elemento <p> dentro del footer */
+}
+
+header {
+  position: relative;
+}
+/* boton buscar */ 
+.search-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  background-color: #610909;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+/* esta es la parte del reglamento */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  color: #000000;
+  font-size:30px;
+  padding: 30px;
+}
+
+h2 {
+  color: #000000;
+  font-size: 20px;
+ 
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+      overflow-x: auto; /* Agrega un desplazamiento horizontal si los artículos exceden el tamaño del contenedor */
+      padding-bottom: 20px; /* Agrega espacio inferior para evitar que los artículos se superpongan con la barra de desplazamiento */
+    
+    
+}
+
+.article {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 2px solid  #683333;
+  border-right: 20px solid rgba(235, 193, 79, 0.733);
+  
+}
+
+.article-title {
+  font-weight: bold;
+}
+.section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.article:hover {
+  transform: scale(1.03);
+}
+
+
+
+/*para que sea responsive  */
+/* Estilos base para pantallas pequeñas */
+.section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.article {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+/* efecto agrandar boton */
+.btn {
+padding: 10px 20px;
+background-color: #f7f4f4;
+color: #501010;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.btn:hover {
+background-color: #ffffff; /* Color de fondo al pasar el cursor */
+color: #801f1fb0; /* Color del texto al pasar el cursor */
+}
+
+.btn:active {
+background-color: #ffffff; /* Color de fondo al hacer clic */
+color: #000000; /* Color del texto al hacer clic */
+}
+
+
+
+  
+  
+  @media (max-width: 768px) {
+    .column {
+      flex: 0 0 100%; /* Establece el ancho de las columnas en el 100% para pantallas pequeñas */
+    }
+  }
+  
+  
+  
+  
+  /* Estilos para pantallas medianas */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para pantallas medianas */
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 1025px) {
+    /* Estilos específicos para pantallas grandes */
+  }
+  
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .custom-table tbody tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  .custom-table tbody td:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+   
+  .social-links a {
+    display: inline-block;
+  }
+
+  
+  .title {
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+    color: #0f0a0a;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .title::before,
+  .title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #6d1006;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .title:hover::before,
+  .title:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .title::after {
+    background-color: #f5f5f5;
+    bottom: -2px;
+  }
+  

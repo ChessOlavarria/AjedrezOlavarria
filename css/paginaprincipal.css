@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, sans-serif;
+  color: rgb(18, 70, 70);
+  background-color: rgba(235, 193, 79, 0.733);
+  overflow-x: hidden;
+  
+  
+  
+}
+
+header {
+  background-image: linear-gradient(to bottom, rgba(139, 69, 19, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url('../img/aje222.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px; /* Establece la altura deseada en píxeles */
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+
+
+nav ul li a {
+  color: #6d0606;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+color: #000000 !important; /* Agrega !important para asegurar que se aplique este color */
+}
+
+
+footer {
+  background-color: #420b0b;
+  padding: 20px;
+  text-align: center;
+  height:200px; 
+}
+
+footer p {
+  color: #be9191; /* Cambia el color del texto del elemento <p> dentro del footer */
+}
+
+header {
+  position: relative;
+}
+
+
+/* esta es la parte del reglamento */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  color: #000000;
+  font-size:30px;
+  padding: 30px;
+}
+
+h2 {
+  color: #000000;
+  font-size: 20px;
+ 
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+      overflow-x: auto; /* Agrega un desplazamiento horizontal si los artículos exceden el tamaño del contenedor */
+      padding-bottom: 20px; /* Agrega espacio inferior para evitar que los artículos se superpongan con la barra de desplazamiento */
+    
+    
+}
+
+.article {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 2px solid  #683333;
+  border-right: 20px solid rgba(235, 193, 79, 0.733);
+  
+}
+
+.article-title {
+  font-weight: bold;
+}
+.section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.article:hover {
+  transform: scale(1.03);
+}
+
+
+
+/*para que sea responsive  */
+/* Estilos base para pantallas pequeñas */
+.section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.article {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+/* efecto agrandar boton */
+.btn {
+padding: 10px 20px;
+background-color: #f7f4f4;
+color: #501010;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.btn:hover {
+background-color: #ffffff; /* Color de fondo al pasar el cursor */
+color: #801f1fb0; /* Color del texto al pasar el cursor */
+}
+
+.btn:active {
+background-color: #ffffff; /* Color de fondo al hacer clic */
+color: #000000; /* Color del texto al hacer clic */
+}
+
+
+.social-links a {
+  display: inline-block;
+}
+/* parte de la noticia */
+/* Estilos para las noticias */
+.news-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+/* Estilos para las imágenes de las noticias */
+.news-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  
+}
+
+/* Estilos para los títulos de las noticias */
+.news-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la información de las noticias */
+.news-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón "Ver más" */
+.news-item .btn {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.news-item .btn:hover {
+  background-color: #23527c;
+  transition: background-color 0.3s ease;
+}
+.news-item img {
+  height: 200px; /* Establece la altura deseada para las imágenes */
+  object-fit: cover; /* Ajusta las imágenes para cubrir todo el contenedor manteniendo la proporción de aspecto */
+  object-position: center; /* Centra las imágenes horizontalmente */
+}
+.news-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.news-title::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #e74c3c;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.news-title:hover::before {
+  transform: scaleX(1);
+}
+
+.news-item {
+  height: 450px; /* Ajusta la altura según tus necesidades */
+}
+
+
+.news-item h3,
+.news-item p {
+  margin: 10px 0;
+}
+
+.news-item a.btn {
+  margin-top: auto;
+}
